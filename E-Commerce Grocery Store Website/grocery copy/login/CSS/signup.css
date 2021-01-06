@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    background-color: #2d4154;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+div{
+    background-color: #f8f5f5;
+    margin: 0 auto;
+    max-width: 70%;
+    border: solid rgb(240, 240, 240);
+    box-shadow: 3px 3px 5px 5px #e73b4f;
+    border-radius: 2%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+form{
+    max-width: 100%;
+    background-color: #f8f5f5;
+}
+
+h2{
+    font-size: 3vw;
+    font-weight: bold;
+    background-color: #f8f5f5;
+}
+p{
+    font-size: 1vw;
+    background-color: #f8f5f5;
+}
+a{
+    font-size: 1vw;
+    background-color: #f8f5f5;
+}
+input[type=text], input[type=password]{
+    font-size: 1.5vw;
+    max-width: 100%;
+    padding: 1%;
+    margin: 1%;
+    border: none;
+    background: #d1d1d1;
+    transition: 0.4s ease;
+    resize: vertical;
+}
+
+input :focus{
+    background-color: rgb(153, 153, 153);
+}
+
+input :hover{
+    transform: translateY(-3px);
+}
+
+button{
+    border-radius: 12px;
+    font-size: 1.5vw;
+    background-color: #5ECBD3;
+    color: white;
+    padding: 2%;
+    margin: 1%;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.8;
+    transition: 0.4s ease;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+@media screen and (max-width: 920px){
+    input[type=text], input[type=password], p, a{
+        font-size: 3vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    div{
+        max-width: 80%;
+        margin-top: 20%;
+    }
+    button{
+        font-size: 2vw;
+        width: 40%;
+        margin-top: 4%;
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    input[type=text], input[type=password], p, a{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    div{
+        max-width: 100%;
+        margin-top: 40%;
+    }
+    button{
+        font-size: 3vw;
+        width: 60%;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width:280px ){
+    input[type=text], input[type=password], p, a{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    div{
+        margin-top: 70%;
+    }
+    button{
+        font-size: 4vw;
+        width: 60%;
+        padding: 6%;
+    }
+}
